@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+
+$stderr.sync = true
+
+require 'optparse'
+
+require 'selenium_grid_console_parser'
+
+# default options
+url = "http://0.0.0.0:4444"
+
+# parse arguments
+file = __FILE__
+ARGV.options do |opts|
+  opts.on("-u", "--url=val", String)   { |val| url = val }
+  opts.on_tail("-h", "--help")         { exec "grep ^#/<'#{file}'|cut -c4-" }
+  opts.parse!
+end
+
+puts SeleniumGridConsoleParser::Parser.new(url).nodes.to_json

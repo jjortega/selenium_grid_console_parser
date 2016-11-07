@@ -1,0 +1,26 @@
+PATH
+  remote: .
+  specs:
+    selenium-grid-parser (0.0.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    byebug (9.0.5)
+    mini_portile2 (2.1.0)
+    nokogiri (1.6.8.1)
+      mini_portile2 (~> 2.1.0)
+    rake (10.5.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.7)
+  byebug
+  nokogiri (~> 1.6)
+  rake (~> 10.0)
+  selenium-grid-parser!
+
+BUNDLED WITH
+   1.12.5

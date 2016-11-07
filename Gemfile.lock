@@ -7,7 +7,10 @@ GEM
   remote: https://rubygems.org/
   specs:
     byebug (9.0.5)
+    httparty (0.14.0)
+      multi_xml (>= 0.5.2)
     mini_portile2 (2.1.0)
+    multi_xml (0.5.5)
     nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
     rake (10.5.0)
@@ -18,6 +21,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.7)
   byebug
+  httparty (~> 0.13)
   nokogiri (~> 1.6)
   rake (~> 10.0)
   selenium-grid-parser!

@@ -8,13 +8,19 @@ require 'selenium_grid_console_parser'
 
 # default options
 url = "http://0.0.0.0:4444"
+output = "hasg"
 
 # parse arguments
 file = __FILE__
 ARGV.options do |opts|
   opts.on("-u", "--url=val", String)   { |val| url = val }
+  opts.on("-o", "--out-put=val", String)   { |val| output = val }
   opts.on_tail("-h", "--help")         { exec "grep ^#/<'#{file}'|cut -c4-" }
   opts.parse!
 end
 
-puts SeleniumGridConsoleParser::Parser.new(url).nodes.to_json
+if output == "json"
+    puts SeleniumGridConsoleParser::Parser.new(url).nodes.to_json
+else
+    puts SeleniumGridConsoleParser::Parser.new(url).nodes.to_hash
+end

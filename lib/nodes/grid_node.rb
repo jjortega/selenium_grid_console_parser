@@ -10,6 +10,10 @@ module SeleniumGridConsoleParser
         @configuration = configuration.delete_if {|key, value| key == "remoteHost"}
       end
 
+      def name
+        @configuration["capabilities"]["applicationName"]
+      end
+
       def free?
         sessions = GridNodeData.new(self).sessions
         @free = sessions["value"].size == 0 ? true : false

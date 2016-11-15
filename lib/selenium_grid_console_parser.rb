@@ -6,6 +6,11 @@ require 'nodes/grid_node_set'
 require 'nodes/configuration/node_configuration'
 
 module SeleniumGridConsoleParser
+  class << self
+    def nodes(url)
+      Parser.new(url).nodes
+    end
+  end
   class Parser
 
     def initialize(url)

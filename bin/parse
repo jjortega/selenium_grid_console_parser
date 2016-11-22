@@ -3,12 +3,12 @@
 $stderr.sync = true
 
 require 'optparse'
-
+require 'bundler/setup'
 require 'selenium_grid_console_parser'
 
 # default options
 url = "http://0.0.0.0:4444"
-output = "hasg"
+output = "hash"
 
 # parse arguments
 file = __FILE__

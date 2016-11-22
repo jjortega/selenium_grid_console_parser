@@ -1,5 +1,4 @@
-require "nodes/configuration/capabilities"
-require "byebug"
+require 'nodes/configuration/capabilities'
 
 module SeleniumGridConsoleParser
   module GridNode

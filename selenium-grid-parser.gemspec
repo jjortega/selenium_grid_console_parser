@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "selenium-grid-parser"
-  spec.version       = "0.0.1"
+  spec.version       = "0.0.3"
   spec.authors       = ["jjortega"]
   spec.email         = ["juanjortcan@gmail.com"]
   spec.summary       = %q{Selenium-Grid doesn't have a pretty API so let parse it!}

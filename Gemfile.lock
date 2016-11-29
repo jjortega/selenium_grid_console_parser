@@ -1,12 +1,11 @@
 PATH
   remote: .
   specs:
-    selenium-grid-parser (0.0.1)
+    selenium-grid-parser (0.0.3)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    byebug (9.0.5)
     httparty (0.14.0)
       multi_xml (>= 0.5.2)
     mini_portile2 (2.1.0)
@@ -20,11 +19,10 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 1.7)
-  byebug
   httparty (~> 0.13)
   nokogiri (~> 1.6)
   rake (~> 10.0)
   selenium-grid-parser!
 
 BUNDLED WITH
-   1.12.5
+   1.13.6
